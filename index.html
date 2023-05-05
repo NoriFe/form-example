@@ -10,11 +10,13 @@
   </head>
   <body>
     <main>
-      <h1 class="form">Form example</h1>
-      <form>
+      <h1 class="form">Code example for form`s</h1>
+      <form method="post" action="https://somewhereInTheWeb.com" class="action">
         <p>
           <label for="firstName"> Your name: </label>
-          <input  class="form__item"
+          <input
+          required
+            class="form__item"
             type="text"
             placeholder="Please enter your name"
             id="firstName"
@@ -24,11 +26,148 @@
         <p>
           <label>
             Your last name:
-            <input class="form__item"
+            <input
+              class="form__item"
               id="lastName"
               placeholder="Please enter last name"
               name="lastName"
           /></label>
+        </p>
+        <p>
+          <label>
+            Favourite number:
+            <input
+              class="form__item"
+              id="number"
+              placeholder="Please enter your favourite number"
+              name="number"
+              type="number"
+          /></label>
+        </p>
+        <p>
+          <label>
+            Phone number:
+            <input
+              class="form__item"
+              id="phoneNumber"
+              placeholder="Please enter your phone number"
+              name="phoneNumber"
+              type="tel"
+          /></label>
+        </p>
+        <p>
+          <label>
+            E-mail:
+            <input
+              class="form__item"
+              id="email"
+              placeholder="Please enter your E-mail"
+              name="email"
+              type="email"
+          /></label>
+        </p>
+        <p>
+          <label>
+            Password:
+            <input
+              class="form__item"
+              id="password"
+              placeholder="Please enter your password"
+              name="password"
+              type="password"
+          /></label>
+        </p>
+        <p>
+          <label>
+            Photo:
+            <input class="form__item" id="photo" name="photo" type="file"
+          /></label>
+        </p>
+        <p>
+          <label for="yourStory">Your story:</label>
+            <textarea class="yourStory" id="yourStory" name="yourStory">My story is...</textarea>
+            
+         
+        </p>
+        <p>
+            <label name="team" for="team">
+              Pick one team:</label>
+              <select>
+                <option value="team-1">FC Barcelona</option>
+                <option value="team-2">Real Madrid</option>
+                <option value="team-3">Menchester United</option>
+             </select>          
+            
+          </p>
+        <p>
+          <label>
+            Range:
+            <input
+              class="form__item"
+              id="ranger"
+              name="range"
+              type="range"
+              min="0"
+              max="100"
+              step="20"
+          /></label>
+        </p>
+        <fieldset>
+          <legend>Address:</legend>
+          <p>
+            <label>
+              Street name:
+              <input
+                class="form__item"
+                id="streetName"
+                placeholder="Please enter Street name"
+                name="streetName"
+            /></label>
+          </p>
+
+          <p>
+            <label>
+              City:
+              <input
+                class="form__item"
+                id="city"
+                placeholder="Please enter City"
+                name="city"
+            /></label>
+          </p>
+          <p>
+            <label>Post Code:
+<input class="form__item" name="pstCode" pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}">
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Favourite band</legend>
+          <p>
+            <lable
+              ><input name="linkinPark" type="radio" value="linkin park" />
+              Linkin Park</lable
+            >
+          </p>
+          <p>
+            <lable
+              ><input name="radioHead" type="radio" value="radio head" /> Radio
+              Head</lable
+            >
+          </p>
+          <p>
+            <lable
+              ><input name="metallica" type="radio" value="metallica" />
+              Metallica</lable
+            >
+          </p>
+        </fieldset>
+        <p>
+          <lable><input type="checkbox" value="agree" /> I agree</lable>
+        </p>
+        <p>
+          <input type="submit" value="Send"/> 
+        
         </p>
       </form>
     </main>
