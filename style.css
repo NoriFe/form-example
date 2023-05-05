@@ -1,8 +1,18 @@
-html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+
+  body{
+    background: #214345;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+ }
+
+ .form{
+
+ }
+.form__item{
+    display:block;
+    width: 100%;
+
+
+}
